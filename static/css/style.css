@@ -404,7 +404,7 @@ z-index: -10;
 	padding: 25px 15px;
 }
 .l-center {
-	margin-left: 100px !important;
+	margin-left: 50px !important;
 }
 .error {
 	color: #000;
@@ -415,6 +415,14 @@ z-index: -10;
 .error-title {
 	font-size: 30px;
 	margin-top: 25px;
+}
+.conditions {
+	font-size: 14px;
+	text-align: center;
+	padding-top: 15px;
+}
+.conditions a {
+	color: blue;
 }
 @media only screen and (min-width: 40em) {
 .modal-overlay {
@@ -524,7 +532,7 @@ opacity: 1;
 
 @media screen and (max-width: 576px){
 	.l-center {
-	margin-left: 10px;
+	margin-left: 100px !important;
 }
 .btn-register {
 left: 0;

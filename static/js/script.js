@@ -39,7 +39,7 @@ $('.close-modal').click(function(){
   elements.removeClass('active');
 });
 
-
+/*
 function handleFileSelect(evt) {
     let file = evt.target.files; // FileList object
     let f = file[0];
@@ -64,7 +64,8 @@ function handleFileSelect(evt) {
 
 $('#file-input').on('change', () => {
   $('.file-input').remove()
-})
+});
+*/
 
 
 function complete() {
@@ -72,4 +73,21 @@ function complete() {
 };
 function save() {
   alert("Данные успешно сохранены");
+};
+
+$("#polzunok").slider({
+animate: true,
+range: true,
+min: 3,
+max: 18,
+values: [ 3, 18 ],
+slide : function(event, ui) {
+$("#result-polzunok").text( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] );
+$("#min").val(ui.values[ 0 ]);
+$("#max").val(ui.values[ 1 ]);
 }
+});
+
+
+$( "#result-polzunok" ).text("от " + $("#polzunok").slider("values", 0) + " до " + $("#polzunok").slider("values", 1));
+

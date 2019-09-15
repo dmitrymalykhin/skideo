@@ -21,6 +21,9 @@ padding: 0;
 a {
 text-decoration: none;
 }
+p {
+	margin-top: 0;
+}
 h1, h2, h3, h4, h5, h6 {
 padding: 0;
 margin: 0;
@@ -359,7 +362,7 @@ margin-right: 100px;
 
 .edit-title, .profile-title  {
 text-align: center;
-padding: 25px 15px;
+margin: 25px 15px;
 }
 .input-img {
 width: 150px;
@@ -376,7 +379,19 @@ position: absolute;
 z-index: -10;
 }
 .profile {
-	color: #000;
+	color: #fff;
+}
+.profile-container {
+		background: #F8F8F8;
+		border-radius: 43px;
+		margin: 25px 0;
+}
+.profile-container-title {
+
+}
+.profile-container-body {
+	background: linear-gradient(252.8deg, #7748FD 6.96%, #C711AF 93.21%);
+	border-radius: 43px;
 }
 .blockoutput {
 	display: flex;
@@ -385,21 +400,74 @@ z-index: -10;
 .profile_block {
 	position: relative;
 }
+.profile_block img {
+	margin-top: 25px;
+	border-radius: 200px;
+	height: 202px;
+	width: 202px;
+	object-fit: cover;
+}
 .profile_inicial {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	padding: 25px 25px;
-	color: #fff;
+	padding: 25px 25px 0 25px;
+	color: #000;
 	font-weight: 900;
 }
+.profile-title {
+	border: 5px solid #C711AF;
+	color: #C711AF;
+	border-radius: 113px;
+	padding: 5px 25px;
+	font-size: 22px;
+}
+.profile-container-body-content {
+	padding: 45px 45px;
+	mar
+}
 .profile_country {
-	font-size: 12px;
 	font-weight: 500;
+	margin-bottom: 0;
 }
 .profile_edit {
 	color: #00bfff;
 }
+.btn-videos {
+	background: #219FFB;
+border-radius: 112px;
+transform: rotate(-90deg);
+position: relative;
+top:75%;
+}
+.btn-videos a {
+	color: #fff;
+}
+.btn-text {
+	text-align: center;
+	margin:0;
+	position: relative;
+	top:25px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.circle {
+bottom:12px;
+left: 10px;
+position: relative;
+width: 50px; 
+height: 50px;
+background: #FFFFFF;
+border-radius: 50%;
+}
+.triangle {
+top: 20px;
+left: 14px;
+position: relative;
+width: 0; 
+height: 0;
+border-left: 11px solid transparent;
+border-right: 11px solid transparent;
+border-top: 16px solid #219FFB;
+}
+
 .profile_edit {
 	padding: 25px 15px;
 }
@@ -582,5 +650,18 @@ z-index: 101;
 
 .close-modal {
 right: 20px !important;
+}
+.btn-videos {
+margin-bottom: 25px;
+border-radius: 112px;
+transform: rotate(0);
+top:0;
+}
+.triangle {
+top: 14px;
+left: 18px;
+border-top: 11px solid transparent;
+border-left: 16px solid #219FFB;
+border-bottom: 11px solid transparent;
 }
 }

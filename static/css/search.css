@@ -12,11 +12,20 @@
 }
 .search-form {
 	display: flex;
-	width: 50%;
+	width: 60%;
+}
+.search-form input{
+	background: #E4E4E4;
+border-radius: 61px;
+z-index: 3;
+padding-left: 25px;
 }
 .btn-search {
-	margin-left: 25px;
-	border-radius: 10px;
+background: linear-gradient(253.45deg, #7748FD 8.72%, #E20095 114.23%);
+border-radius: 113px;
+padding-left: 45px;
+right: 35px;
+position: relative;
 }
 
 .filters {

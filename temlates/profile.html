@@ -86,10 +86,12 @@
 						<div class="profile-container-title">
 							<div class="profile_block text-center">
 								<img src="../static/images/index.jpg" alt="" >
+								<button class="edit_photo open-modal2">Ред.фото</button>
 								<div class="profile_inicial">
 									<h2 class="profile_name">Имя Фамилия [[output_field]]</h2>
 									<p class="profile_country">Город [[output_field]]</p>
 								</div>
+
 							</div>
 							<div class="d-flex" style="justify-content: space-between;">
 								<h1 class="profile-title">Обо мне</h1>
@@ -175,7 +177,7 @@
 			</div>
 			<div class="col-md-3">
 				<div class="btn-videos">
-				<a href="">
+				<a href="my-video.html">
 					<p class="btn-text">Мои видео</p>
 				<div class="circle">
 				<div class="triangle"></div>
@@ -209,6 +211,30 @@
 			</div>
 		</div>
 	</footer>
+			<div class="modal-overlay2">
+		<div class="modal2">
+			<a class="close-modal2">
+				<svg viewBox="0 0 20 20">
+					<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+				</svg>
+			</a>
+			<div class="modal-content2 text-center">
+				<h2>Редактировать фото</h2>
+				<div class="push20"></div>
+		<form action="">
+									<div class="blockinput">
+							<div class="col-8">
+								<input type="file" id="file-input" name="INPUT_FIELD" accept="image/*" />
+								<span id="output"></span>
+								<label class="file-input" type="file"  accept="image/*" for="file-input"><b>Выберите файл</b></label>
+							</div>
+						</div>
+			<div class="push20"></div>
+			<button class="btn">Изменить</button>
+		</form>
+		</div>
+		</div>
+	</div>
 
 	<div class="modal-overlay">
 		<div class="modal">
@@ -244,7 +270,7 @@
 							<div class="push20"></div>
 							<button type="submit" class="btn btn-send">Войти</button>
 							<div class="conditions">
-								<a href="">Напомнить пароль</a>
+								<a href="recovery.html">Напомнить пароль</a>
 							</div>
 						</form>
 					</div>

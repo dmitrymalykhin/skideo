@@ -39,7 +39,17 @@ $('.close-modal').click(function(){
   elements.removeClass('active');
 });
 
-/*
+let element = $('.modal-overlay2, .modal2');
+
+$('.open-modal2').click(function(){
+  element.addClass('active');
+});
+
+$('.close-modal2').click(function(){
+  element.removeClass('active');
+});
+
+
 function handleFileSelect(evt) {
     let file = evt.target.files; // FileList object
     let f = file[0];
@@ -65,7 +75,7 @@ function handleFileSelect(evt) {
 $('#file-input').on('change', () => {
   $('.file-input').remove()
 });
-*/
+
 
 
 function complete() {
